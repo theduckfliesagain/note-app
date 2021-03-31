@@ -33,6 +33,7 @@ class Post {
                 data.path =  (data.title.replace(" ", "-") + "-" +
                              data.name.replace(" ", "-") + "-" +
                              newID).toLowerCase();
+                data.date = new Date();
                 const result = await db.collection('posts').insertOne(data);
                 const newPost = new Post(result.ops[0]);
                 resolve(newPost);

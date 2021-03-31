@@ -1,13 +1,20 @@
 const express = require('express');
-const app = express();
 const cors = require('cors');
+const bodyParser = require('body-parser');
 
+const app = express();
 app.use(cors('*'));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
-const postRoutes = require('./controllers/posts');
+const postRoutes = require('./routes/posts');
 app.use('/posts', postRoutes);
 
-app.get('/', (req, res) => res.json({ message: 'Welcome' }));
+app.set('views', './views');
+app.set('view engine', 'pug');
+
+app.get('/', (req, res) => {
+    res.render('index', {title: 'Test', message: 'Welcome' })
+});
 
 module.exports = app;

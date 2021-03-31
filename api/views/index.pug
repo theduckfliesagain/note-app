@@ -1,0 +1,13 @@
+html
+    head
+        title= title
+    body
+
+        form#post-form(method='POST' action='/posts' )
+            label(for='title') Title:
+            input#title.form-control(type='text' placeholder='title' name='title')
+            label(for='name') Pseudoname:
+            input#name.form-control(type='text' placeholder='pseudoname' name='name')
+            label(for='message') Message:
+            input#message.form-control(type='text' placeholder='message' name='message')
+            button.btn.btn-primary(type='submit') brain.dump
