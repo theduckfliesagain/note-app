@@ -6,6 +6,11 @@
     padding: 0;
 }
 
+html {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
 header {
     display: block;
     background-color: rgb(24, 24, 24);
@@ -23,13 +28,13 @@ h3 {
 }
 
 body {
-    background-image: url("https://images.iphonephotographyschool.com/22682/How-To-Blur-Background-On-iPhone.jpg");
-    background-color: rgba(0, 0, 0, 0.24);
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5) ),url("https://images.iphonephotographyschool.com/22682/How-To-Blur-Background-On-iPhone.jpg");
+    background-size: cover;
     font-family: 'Mukta', sans-serif;
 }
 
 main {
-    margin: 5em 20vw;
+    margin: 5em 30vw;
 }
 
 label {
@@ -37,8 +42,30 @@ label {
     visibility: hidden;
 }
 
-.form-group {
-    margin: 0.5em;
+button {
+    color: white;
+    background-color: rgb(119, 119, 119);
+    border-radius: 5px;
+    background-color: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    /* font-weight: bold; */
+    /* font-size: 1.5rem; */
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: rgb(24, 88, 207) ;
+    color: white;
+    cursor: pointer;
+}
+
+.error {
+    background-color: rgb(163, 14, 14);
+    border-radius: 10px;
+    color: white;
+    padding: 3em;
 }
 
 
@@ -50,10 +77,16 @@ label {
     border-radius: 10px;
 }
 
-input, button, textarea {
-    margin: auto;
+
+.form-group {
+    /* margin: 0.5em; */
+}
+.form-group > input, 
+.form-group > button, 
+.form-group > textarea {
+    margin: 10px auto;
     width: 100%;
-    padding: 0.5rem;
+    padding: 1rem;
     background-color: none;
     border: none;
     outline: none;
@@ -67,7 +100,22 @@ textarea {
 }
 
 #title {
-    font-size: 3rem;
+    font-size: 2rem;
+}
+
+#post-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#copy-url {
+    background-color: rgba(0, 0, 0, 0.0);
+    font-size: 2em;
+}
+
+#copy-url:hover {
+    background-color: rgb(24, 88, 207) ;
 }
 
 #info {
@@ -79,34 +127,11 @@ textarea {
     color: rgb(156, 156, 156);
 }
 
-#name {
-    font-size: 1.5rem;
-
-}
 #message {
     margin: 2em auto;
-    font-size: 1rem;
+
 }
 
-button {
-    color: white;
-    background-color: rgb(119, 119, 119);
-    font-weight: bold;
-    font-size: 1.5rem;
-    transition-duration: 0.4s;
-}
-button:hover {
-    background-color: rgb(24, 88, 207) ;
-    color: white;
-    cursor: pointer;
-}
-
-.error {
-    background-color: rgb(163, 14, 14);
-    border-radius: 10px;
-    color: white;
-    padding: 3em;
-}
 
 a {
     text-decoration: none;

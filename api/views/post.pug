@@ -2,7 +2,10 @@ extends layout
 
 block content
     div#post
-        h1#title= title
+        div#post-head
+            h1#title= title
+            button#copy-url(onclick="copyURL()")
+                i(class="fa fa-copy")
 
         div#info
             - const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
