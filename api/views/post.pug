@@ -1,6 +1,7 @@
-head
-    title= title
-body
-    h1= title
-    h3= name
-    p= message
+extends layout
+
+block content
+    div#post
+        h1#title= title
+        h3#name= name
+        p#message= message

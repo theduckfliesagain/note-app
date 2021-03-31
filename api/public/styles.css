@@ -1,0 +1,19 @@
+body {
+    background-color: white;
+    margin: 20em, 60vw;
+
+}
+
+label {
+    visibility: hidden;
+}
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.form-group {
+    margin: 0.5em;
+}
