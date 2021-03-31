@@ -3,5 +3,11 @@ extends layout
 block content
     div#post
         h1#title= title
-        h3#name= name
+
+        div#info
+            - const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            p#name by #{name} !{' '} 
+            p#date on #{months[date.getMonth()]} #{date.getDate()}, #{date.getFullYear()}
+
         p#message= message
+
