@@ -21,7 +21,19 @@ Run `bash _scripts/<script name>.sh` to run or close docker containers.
 * JavaScript
 * Express
 * Cors
+* Pug
 * MongoDB
+
+## Process
+* Setup up docker compose with API and DB services
+* Setup up basic server structure
+* Connected server to DB
+* Added basic GET route and designed Post model
+* Seeded database with test posts
+* Worked on confirming GET route worked, added POST route
+* Began using unique path as Post identifier to use human readable urls
+* Added views using Pug to deliver post form at `/` and post at `/<unique post url>`
+* Styled site
 
 ## Bugs
 
@@ -30,4 +42,3 @@ Run `bash _scripts/<script name>.sh` to run or close docker containers.
 
 ## TODO
 
-* Allow users to copy URL from page as soon as post is created
