@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+header {
+    display: block;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    padding: 3em;
+    box-shadow: 0 2px 10px #111111;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+body {
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5) ),url("https://images.iphonephotographyschool.com/22682/How-To-Blur-Background-On-iPhone.jpg");
+    background-size: cover;
+    font-family: 'Mukta', sans-serif;
+}
+
+main {
+    margin: 5em 30vw;
+}
+
+label {
+    display: none;
+    visibility: hidden;
+}
+
+button {
+    color: white;
+    background-color: rgb(119, 119, 119);
+    border-radius: 5px;
+    background-color: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    /* font-weight: bold; */
+    /* font-size: 1.5rem; */
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: rgb(24, 88, 207) ;
+    color: white;
+    cursor: pointer;
+}
+
+.error {
+    background-color: rgb(163, 14, 14);
+    border-radius: 10px;
+    color: white;
+    padding: 3em;
+}
+
+
+#post, form{
+    background-color: rgb(31, 31, 31);
+    box-shadow: 0 2px 10px #111111;
+    color: white;
+    padding: 3em;
+    border-radius: 10px;
+}
+
+
+.form-group {
+    /* margin: 0.5em; */
+}
+.form-group > input, 
+.form-group > button, 
+.form-group > textarea {
+    margin: 10px auto;
+    width: 100%;
+    padding: 1rem;
+    background-color: none;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+textarea {
+    font-family: inherit;
+    resize: vertical;
+    height: 10em;
+}
+
+#title {
+    font-size: 2rem;
+}
+
+#post-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#copy-url {
+    background-color: rgba(0, 0, 0, 0.0);
+    font-size: 2em;
+}
+
+#copy-url:hover {
+    background-color: rgb(24, 88, 207) ;
+}
+
+#info {
+    width: 100%;
+    display: inline-block;
+}
+
+#date {
+    color: rgb(156, 156, 156);
+}
+
+#message {
+    margin: 2em auto;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+

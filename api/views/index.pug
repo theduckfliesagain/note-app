@@ -1,0 +1,16 @@
+extends layout
+
+block content
+
+    form#post-form(method='POST' action='/' )
+        div.form-group
+            label(for='title') Title:
+            input#title.form-control(type='text' placeholder='title' name='title' required )
+        div.form-group
+            label(for='name') Pseudoname:
+            input#name.form-control(type='text' placeholder='pseudonym' name='name' required )
+        div.form-group
+            label(for='message') Message:
+            textarea#message.form-control(placeholder='message' name='message' required )
+        div.form-group
+            button.btn.btn-primary(type='submit') brain.dump

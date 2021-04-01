@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    div#post
+        div#post-head
+            h1#title= title
+            button#copy-url(onclick="copyURL()")
+                i(class="fa fa-copy")
+
+        div#info
+            - const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            p#name by #{name} !{' '} 
+            p#date on #{months[date.getMonth()]} #{date.getDate()}, #{date.getFullYear()}
+
+        p#message= message
+
